@@ -1,0 +1,27 @@
+[project]
+name = "live-captions"
+version = "0.1.0"
+description = "Always-on-top, on-device live English captions for Linux"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Eng Mohammad Mahmoud", email = "info@mamitek.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "ctranslate2",
+    "numpy",
+    "PyQt5",
+    "sentencepiece",
+    "sherpa-onnx",
+]
+
+[project.urls]
+Homepage = "https://mamitek.com/live-captions-linux/"
+
+[project.scripts]
+live-captions = "live_captions.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["live_captions"]
