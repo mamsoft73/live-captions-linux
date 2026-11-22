@@ -22,7 +22,7 @@ Download, screenshots and full guide (Arabic): https://mamitek.com/live-captions
 جُرّب على Ubuntu 24.04 بجلسة GNOME Wayland وخادم الصوت PipeWire. يتضمن أيضًا دعمًا لخادم PulseAudio عبر `parec`، لكنه لم يُجرَّب بعد.
 
 ```bash
-tar xzf live-captions-0.1.0.tar.gz
+tar xf live-captions-0.1.0.tar
 cd live-captions-0.1.0
 ./install.sh
 ```
