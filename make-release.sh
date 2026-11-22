@@ -12,7 +12,7 @@ staging="$(mktemp -d)"
 trap 'rm -rf "$staging"' EXIT
 
 mkdir "$staging/$name"
-cp -p install.sh uninstall.sh pyproject.toml README.md "$staging/$name/"
+cp -p install.sh uninstall.sh pyproject.toml README.md LICENSE "$staging/$name/"
 mkdir "$staging/$name/live_captions"
 cp -p live_captions/*.py "$staging/$name/live_captions/"
 
